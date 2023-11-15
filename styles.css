@@ -1,0 +1,199 @@
+* {
+    margin: auto;
+    max-width: 1450px;
+    box-sizing: border-box;
+}
+#navbar-iphone {
+    visibility: hidden;
+    display: flex;
+}
+
+#navbar-pinterest{
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#pinterest-icon {
+    padding: 12px; 
+}
+
+.menu-container {
+    display: flex;
+    margin-right: 0;
+}
+
+#inicio {
+    background-color: #000;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#explorar, #crear {
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+#inicio:hover, #explorar:hover, #crear:hover {
+    cursor: pointer;
+} 
+
+.finder{
+    width: 1000px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #E7E7E7;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.finder:hover {
+    background-color: #CBC8C8 ;
+}
+
+.profile-container{
+    display: flex;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+#notifications, #message, #profile-img, #lupa {
+    padding: 12px;
+}
+
+#notifications:hover,#message:hover,#profile-img:hover, #pinterest-icon:hover, #lupa:hover{
+    background-color: #E7E7E7;
+    border-radius: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#content {
+    margin-top: 50px;
+    columns: 6;
+    width: 100vw;
+    
+}
+
+#content div {
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#content div .icon1 {
+    visibility: hidden;
+    position: absolute;
+    top: 82%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #000;
+    background-color: #CBC8C8;
+    border-radius: 100%;
+        }
+
+#content div:hover .icon1{
+    visibility: visible;
+}
+
+#content div .icon2 {
+    visibility: hidden;
+    position: absolute;
+    top: 82%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #000;
+    background-color: #CBC8C8;
+    border-radius: 100%;
+}
+
+#content div:hover .icon2{
+    visibility: visible;
+}
+
+#content div .icon3 {
+    visibility: hidden;
+    position: absolute;
+    top: 12%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    color: #000;
+}
+
+#content div:hover .icon3{
+    visibility: visible;
+}
+
+.icon3 button{
+    padding: 10px;
+    background-color: #FF3C3C;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#content div img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+#content div:hover{
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+@media (max-width: 820px) {
+    #content {
+        columns: 3;
+    }
+}
+
+@media (max-width: 420px) {
+    #content {
+        margin-top: 0;
+        columns: 2;
+    }
+    #navbar-pinterest {
+        visibility: hidden;
+    }
+
+    #navbar-iphone {
+        background-color: #fff;
+        position: fixed;
+        visibility: visible;
+        height: 50px;
+        width: 100vw;
+    }
+
+    #content div .icon1 {
+        top: 82%;
+        left: 60%;
+            }
+
+    #content div .icon3 {
+        top: 12%;
+        left: 68%;
+    }
+}
